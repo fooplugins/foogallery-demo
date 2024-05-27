@@ -1,0 +1,19 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "login"
+		},
+		{
+			"step": "importFile",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/fooplugins/foogallery-demo/master/content.xml"
+			}
+		}
+	],
+	"landingPage": "/wp-admin/edit.php?post_type=foogallery"
+}
