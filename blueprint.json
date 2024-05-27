@@ -8,6 +8,16 @@
 			"step": "login"
 		},
 		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "wordpress.org/plugins",
+				"slug": "foogallery"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
 			"step": "importFile",
 			"file": {
 				"resource": "url",
